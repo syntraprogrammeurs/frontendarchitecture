@@ -8,6 +8,12 @@ import * as bootstrap from 'bootstrap'
 
 /*
 * Opdracht: schrijf in tekst (bijvoorbeeld in comments of in een apart document) minstens 5 architectuurproblemen.
+* notes en lastnote zijn globaal
+* één event handler
+* ui render staat ook in de handler
+* er is geen module
+* fetch-call zit hardcoded in de ui handler
+* geen scheiding van concerns data, logica en ui door elkaar.
 
 * */
 
