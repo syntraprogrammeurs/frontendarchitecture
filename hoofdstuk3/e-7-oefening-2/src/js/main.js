@@ -37,14 +37,20 @@ class NotificationCounterSingleton {
 
     render() {
         const badge = document.querySelector("#notif_badge");
-        if (badge) badge.textContent = this.count;
+        if (badge) {
+            badge.textContent = this.count;
+        }
     }
 }
 
 const NotifCounter = new NotificationCounterSingleton();
 
 // “modules”
-const ModuleA = { notify() { NotifCounter.addNotification(); }};
+const ModuleA = {
+    notify() {
+        NotifCounter.addNotification();
+    }
+};
 const ModuleB = { notify() { NotifCounter.addNotification(); }};
 
 // events
