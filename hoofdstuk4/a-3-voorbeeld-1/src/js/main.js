@@ -35,6 +35,9 @@ EventBus.subscribe("MESSAGE", function (payload) {
     li.textContent = `[${new Date().toLocaleTimeString()}] ${payload.text}`;
     list.appendChild(li);
 });
+EventBus.subscribe("MESSAGE", function (payload) {
+    console.log("Log voor debugging:", payload.text);
+});
 
 // Publisher: stuurt MESSAGE event
 document
